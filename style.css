@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+body{
+    font-family: "Lexend", sans-serif;
+    background-color: #191919;
+}
+
+@layer components{
+    .nav-link{
+        @apply text-white hover:text-[#747070] transition ;
+    }
+}
