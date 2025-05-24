@@ -11,3 +11,8 @@ body{
         @apply text-white hover:text-[#747070] transition ;
     }
 }
+
+body{
+   width: 90%;
+   margin: auto;
+}
