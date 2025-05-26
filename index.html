@@ -1,92 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>banking-site</title>
 </head>
-<body>
-    
+
+<body class="overflow-x-hidden">
+
     <!-- header part -->
+    <div>
+        <img src="images/abstractleft.png" alt="img"
+            class="absolute top-0 left-0 right-0 w-1/2 h-1/2 -z-10  pt-10 mb-20">
+    </div>
+
+    <header class="flex justify-between items-center mx-auto bg-[#1C1C1C] py-4 px-5 rounded">
         <div>
-            <img src="images/abstractleft.png" alt="img" class="absolute top-0 left-0 right-0 w-1/2 h-1/2 -z-10  pt-10 mb-20">
+            <img src="images/Logo.png" alt="" class="">
         </div>
+        <!-- mobile humbar -->
+        <div class="md:hidden">
+            <butto id="mobile-menu-button">
+                <i class="fa-solid fa-bars text-white text-[2rem]"></i>
+            </butto>
+        </div>
+        <!-- nav part -->
+        <nav class="hidden md:flex items-center space-x-6">
+            <a href="#" class="bg-[#262626] text-white px-4 py-2 rounded hover:bg-[#4b4a4a] transition">Home</a>
+            <a href="#" class="nav-link">Careers</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Security</a>
+        </nav>
 
-        <header class="flex justify-between items-center mx-auto bg-[#1C1C1C] py-4 px-5 rounded" > 
-               <div>
-                  <img src="images/Logo.png" alt="" class="">
-               </div>
-               <!-- mobile humbar -->
-                <div class="md:hidden">
-                    <butto id="mobile-menu-button">
-                     <i class="fa-solid fa-bars text-white text-[2rem]"></i>
-                    </butto>
+        <!-- button nav -->
+        <div class="hidden md:flex items-center gap-4">
+            <a href="#" class="text-white text-lg hover:text-[#747070]">button</a>
+            <button class="bg-[#CAFF33] text-black border-none rounded-full py-3 px-6">Login</button>
+        </div>
+    </header>
+
+    <!-- mobile device part -->
+
+
+    <div id="mobile-menu" class="fixed inset-0 bg-[#191919]/90 z-50 flex flex-col justify-center items-center hidden">
+        <div class="absolute  top-4 right-4">
+            <button id="close-menu-button"><i class="fa-solid fa-xmark text-white text-[2.2rem]"></i></button>
+        </div>
+        <!-- nav part mobile -->
+        <nav class="flex flex-col items-center space-y-6">
+            <a href="#" class="bg-[#262626] text-white px-4 py-2 rounded hover:bg-[#4b4a4a] transition">Home</a>
+            <a href="#" class="nav-link">Careers</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Security</a>
+            <!-- button  -->
+            <a href="#" class="text-white text-lg hover:text-[#747070]">button</a>
+            <button class="bg-[#CAFF33] text-black border-none rounded-full py-3 px-6">Login</button>
+        </nav>
+
+    </div>
+
+    <!-- hero part -->
+    <main class="grid grid-cols-12 mt-16">
+        <!-- text part -->
+        <div class="md:col-span-6 col-span-12 md:text-left text-center flex-1">
+            <div class="text-white flex flex-col mx-auto">
+                <div
+                    class="text-white bg-[#262626] flex justify-center items-center max-w-fit gap-2.5 p-2 rounded-full mb-4 md:text-left md:m-0 mx-auto">
+                    <i class="fa-solid fa-circle-check text-[#CAFF33]"></i>
+                    <h6 class=" md:text-[18px] text-[13px]">No LLC Required, No Credit Check.</h6>
                 </div>
-                <!-- nav part -->
-                 <nav class="hidden md:flex items-center space-x-6">
-                    <a href="#" class="bg-[#262626] text-white px-4 py-2 rounded hover:bg-[#4b4a4a] transition">Home</a>
-                    <a href="#" class="nav-link">Careers</a>
-                    <a href="#" class="nav-link">About</a>
-                    <a href="#" class="nav-link">Security</a>
-                 </nav>
+                <h2 class="md:text-[28px] text-[28px] font-bold md:text-left text-center  md:mb-6 mb-6 ">Welcome to
+                    YourBank
+                    Empowering Your <span class="text-[#CAFF33]">Financial Journey</span></h2>
+                <p class="md:text-[14px] text-[12px] text-[#E4E4E7
+                            ]">At YourBank, our mission is to provide comprehensive banking solutions that empower
+                    individuals and businesses to achieve their financial goals. We are committed to delivering
+                    personalized and innovative services that prioritize our customers' needs.</p>
 
-                   <!-- button nav -->
-                    <div class="hidden md:flex items-center gap-4">
-                         <a href="#" class="text-white text-lg hover:text-[#747070]">button</a>
-                         <button class="bg-[#CAFF33] text-black border-none rounded-full py-3 px-6">Login</button>
-                    </div>
-        </header>
+                <div class="text-center md:text-left">
+                    <button
+                        class="bg-[#CAFF33] text-black border-none rounded-full max-w-fit w-full py-3  px-8 md:px-9 text-center mt-6 md:mt-7 ">Login</button>
+                </div>
 
-        <!-- mobile device part -->
-
-        
-        <div id="mobile-menu" class="fixed inset-0 bg-[#191919]/90 z-50 flex flex-col justify-center items-center hidden">
-            <div class="absolute  top-4 right-4">
-                <button id="close-menu-button"><i class="fa-solid fa-xmark text-white text-[2.2rem]"></i></button>
             </div>
-         <!-- nav part mobile -->
-                 <nav class="flex flex-col items-center space-y-6">
-                    <a href="#" class="bg-[#262626] text-white px-4 py-2 rounded hover:bg-[#4b4a4a] transition">Home</a>
-                    <a href="#" class="nav-link">Careers</a>
-                    <a href="#" class="nav-link">About</a>
-                    <a href="#" class="nav-link">Security</a>
-                    <!-- button  -->
-                      <a href="#" class="text-white text-lg hover:text-[#747070]">button</a>
-                         <button class="bg-[#CAFF33] text-black border-none rounded-full py-3 px-6">Login</button>
-                 </nav>
+        </div>
+        <!-- img part  -->
+        <div class="md:col-span-6 col-span-12 flex-1 flex flex-col items-end relative md:mt-0 mt-12">
+            <div class="relative flex justify-end w-full h-full md:left-20 -x-10">
+                <img src="images/abstractright.png" alt="" class="absolute">
+            </div>
+            <div class=" absolute -top-10 left-32 z-10 md:mt-0 mt-8 ">
+                <div class="text-white flex items-center gap-2 bg-[#22251B] py-2 px-4 rounded-lg shadow-lg">
+                    <i class="fa-solid fa-plus bg-[#CAFF33] md:p-3 p-2 rounded-full"></i>
+                    <div>
+                        <h4 class="font-bold md:text-lg text-base">$5000,00</h4>
+                        <p class="text-xs text-[#E4E4E7]">Monthly Income</p>
+                    </div>
 
-                  </div>
+                </div>
+            </div>
 
-                  <!-- hero part -->
-                   <main class="grid grid-cols-12 mt-16">
-                    <!-- text part -->
-                       <div class="md:col-span-6 col-span-12 md:text-left text-center ">
-                         <div class="text-white flex flex-col mx-auto">
-                            <div class="text-white bg-[#262626] flex justify-center items-center max-w-fit gap-2.5 p-2 rounded-full mb-4 md:text-left md:m-0 mx-auto">
-                                <i class="fa-solid fa-circle-check text-[#CAFF33]"></i>
-                                <h6 class=" md:text-[18px] text-[13px]">No LLC Required, No Credit Check.</h6>
+            <!-- card  -->
+            <div
+                class="bg-[#1A1A1A00] outline outline-amber-200/5 p-8 w-full max-w-md mt-12 md:mt-0 relative z-0 md:mr-16 ">
+                <div>
+                    <h3 class="text-white font-black mb-4 ">Your Transactions</h3>
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center px-4 py-4">
+                            <div class="flex items-center gap-3">
+                                <span class="bg-[#CAFF33] outline size-7 flex justify-center items-center rounded-full">
+                                    <i class="fa-solid fa-plus"></i>
+                                </span>
+
+                                <div class="">
+                                    <h4 class="text-white font-medium">Transaction</h4>
+                                    <h6 class="text-xs text-[#FFFFFF]">Joel Kenley</h6>
+                                </div>
+
                             </div>
-                            <h2 class="md:text-[28px] text-[28px] font-bold md:text-left text-center  md:mb-6 mb-6 ">Welcome to YourBank
-                             Empowering Your  <span class="text-[#CAFF33]">Financial Journey</span></h2>
-                            <p class="md:text-[14px] text-[12px] text-[#E4E4E7
-                            ]">At YourBank, our mission is to provide comprehensive banking solutions that empower individuals and businesses to achieve their financial goals. We are committed to delivering personalized and innovative services that prioritize our customers' needs.</p>
-                            
-                            <div class="text-center md:text-left">
-                                 <button class="bg-[#CAFF33] text-black border-none rounded-full max-w-fit w-full py-3  px-8 md:px-9 text-center mt-6 md:mt-7 ">Login</button>
-                            </div>
 
-                         </div>
-                       </div>
-                       <!-- img part  -->
-                        <div class="md:col-span-6 col-span-12">
+                            <div class="text-red-500 font-bold">
+                                -$68.00
+                            </div>
 
                         </div>
-                   </main>
 
-                  <!-- js part -->
 
-                  <script src="src/main.js"></script>
+                        <div class="flex justify-between items-center px-4 py-4 opacity-65">
+                            <div class="flex items-center gap-3">
+                                <span class="bg-[#1c1c1c] outline size-7 flex justify-center items-center rounded-full">
+                                    <i class="fa-solid fa-plus text-gray-300"></i>
+                                </span>
+
+                                <div class="">
+                                    <h4 class="text-white font-medium">Transaction</h4>
+                                    <h6 class="text-xs text-[#FFFFFF]">Joel Kenley</h6>
+                                </div>
+
+                            </div>
+
+                            <div class="text-red-500 font-bold">
+                                -$68.00
+                            </div>
+
+                        </div>
+
+
+                        <div class="flex justify-between items-center px-4 py-4 opacity-30">
+                            <div class="flex items-center gap-3">
+                                <span class="bg-[#1c1c1c] outline size-7 flex justify-center items-center rounded-full">
+                                    <i class="fa-solid fa-plus text-gray-300"></i>
+                                </span>
+
+                                <div class="">
+                                    <h4 class="text-white font-medium">Transaction</h4>
+                                    <h6 class="text-xs text-[#FFFFFF]">Joel Kenley</h6>
+                                </div>
+
+                            </div>
+                            <div class="text-red-500 font-bold">
+                                -$68.00
+                            </div>
+
+                        </div>
+
+
+                        <div class="mt-8">
+                            <h3 class="text-white font-semibold mb-4">Money Exchange</h3>
+
+                            <div class="overflow-hidden rounded-xl border border-lime-400/5">
+                                <table class="w-full border-collapse bg-[#262626]">
+                                    <tr class="border-b text-lime-400/5 ">
+                                        <td class="p-4 rounded-xl border-r text-lime-400/5">
+                                            <div class="text-white flex justify-center items-center gap-3">
+                                                <div>
+                                                    <img src="images/in.png" alt="">
+
+                                                </div>
+                                                     <div>
+                                                         <h3 class="text-xl font-medium">INR</h3>
+                                                         <p class="text-xs">Indian Rupees</p>  
+                                                     </div>
+                                                   
+                                                
+                                            </div>
+                                        </td>
+
+                                        <td class="p-4 ">
+                                            <div class="text-white flex justify-center items-center gap-3">
+                                                <div>
+                                                    <img src="images/us.png" alt="">
+
+                                                </div>
+                                                     <div>
+                                                         <h3 class="text-xl font-medium" >USD</h3>
+                                                         <p  class="text-xs">United States Dollar</p>  
+                                                     </div>
+                                                   
+                                                
+                                            </div>
+                                        </td>
+
+                                    </tr>
+
+                                   <tr>
+                                        <td class="p-4 rounded-xl border-r text-lime-400/5">
+                                            <div class="text-white flex justify-center items-center gap-3">
+                                                
+                                                <h2 class="text-white text-2xl">50,00</h2>   
+                                            </div>
+                                        </td>
+
+                                        <td class="p-4 rounded-xl border-r text-lime-400/5">
+                                            <div class="text-white flex justify-center items-center gap-3">
+                                                
+                                                <h2 class="text-white text-2xl">12,00</h2>   
+                                            </div>
+                                        </td>
+
+                                        
+
+                                    </tr>
+
+
+
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+    </main>
+
+    <!-- js part -->
+
+    <script src="src/main.js"></script>
 </body>
+
 </html>
