@@ -10,6 +10,9 @@ body{
     .nav-link{
         @apply text-white hover:text-[#747070] transition ;
     }
+    .my-btn{
+        @apply bg-[#CAFF33] text-black border-none rounded-full py-3  px-6 md:px-5 text-center hover:bg-[#B3B3B3] hover:transition-all hover:cursor-pointer hover:scale-105 duration-300;
+    }
 }
 
 body{
