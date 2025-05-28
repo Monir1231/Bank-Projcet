@@ -13,6 +13,9 @@ body{
     .my-btn{
         @apply bg-[#CAFF33] text-black border-none rounded-full py-3  px-6 md:px-5 text-center hover:bg-[#B3B3B3] hover:transition-all hover:cursor-pointer hover:scale-105 duration-300;
     }
+    .my-card{
+        @apply bg-[#262626] md:p-6 p-4 rounded-md hover:transition-all hover:cursor-pointer hover:scale-105 duration-200 my-3 ;
+    }
 }
 
 body{
