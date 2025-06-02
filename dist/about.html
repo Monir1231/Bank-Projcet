@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>banking-site</title>
+  <link rel="stylesheet" crossorigin href="/assets/style-BeczWCfZ.css">
+</head>
+
+<body class="overflow-x-hidden">
+
+    <!-- header part -->
+    <div>
+        <img src="/assets/abstractleft-B5SGIi61.png" alt="img"
+            class="absolute top-0 left-0 right-0 w-1/2 h-1/2 -z-10  pt-10 mb-20">
+    </div>
+
+    <header class="flex justify-between items-center mx-auto bg-[#1C1C1C] py-4 px-5 rounded">
+        <div>
+            <img src="data:image/png;base64,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" alt="" class="">
+        </div>
+        <!-- mobile humbar -->
+        <div class="md:hidden">
+            <butto id="mobile-menu-button">
+                <i class="fa-solid fa-bars text-white text-[2rem]"></i>
+            </butto>
+        </div>
+        <!-- nav part -->
+        <nav class="hidden md:flex items-center space-x-6">
+            <a href="index.html" class="bg-[#262626] text-white px-4 py-2 rounded hover:bg-[#4b4a4a] transition">Home</a>
+            <a href="" class="text-white hover:text-[#747070] transition ">Careers</a>
+            <a href="#" class="text-white hover:text-[#747070] transition ">About</a>
+            <a href="#" class="text-white hover:text-[#747070] transition ">Security</a>
+        </nav>
+
+        <!-- button nav -->
+        <div class="hidden md:flex items-center gap-4">
+            <a href="#" class="text-white text-lg hover:text-[#747070]">button</a>
+            <button class="bg-[#CAFF33] text-black border-none rounded-full py-3 px-6">Login</button>
+        </div>
+    </header>
+
+    <!-- mobile device part -->
+
+
+    <div id="mobile-menu" class="fixed inset-0 bg-[#191919]/90 z-50 flex flex-col justify-center items-center hidden">
+        <div class="absolute  top-4 right-4">
+            <button id="close-menu-button"><i class="fa-solid fa-xmark text-white text-[2.2rem]"></i></button>
+        </div>
+        <!-- nav part mobile -->
+        <nav class="flex flex-col items-center space-y-6">
+            <a href="#" class="bg-[#262626] text-white px-4 py-2 rounded hover:bg-[#4b4a4a] transition">Home</a>
+            <a href="#" class=" text-white hover:text-[#747070] transition ">Careers</a>
+            <a href="#" class=" text-white hover:text-[#747070] transition ">About</a>
+            <a href="#" class=" text-white hover:text-[#747070] transition ">Security</a>
+            <!-- button  -->
+            <a href="#" class="text-white text-lg hover:text-[#747070]">button</a>
+            <button class="bg-[#CAFF33] text-black border-none rounded-full py-3 px-6">Login</button>
+        </nav>
+
+    </div>
+
+    <!-- hero part start -->
+
+    <section class="mt-5 md:my-14">
+       <!-- img  -->
+        <div class="flex items-center justify-end">
+           <div class="bg-[url(/images/about.png)] bg-cover bg-center md:h-[450px] h-75 md:w-[55%] w-full rounded-lg shadow ">
+           </div>
+           </div>
+
+
+          <!-- text -->
+          
+             <div class=" md:absolute md:top-32 md:ml-2 bg-[#1A1A1A] rounded-2xl  md:p-4 md:w-[50%] md:mt-0 mt-8">
+                <h4 class="text-[18px] text-white  md:text-left text-center font-semibold">Welcome to YourBank</h4>
+           <h2 class="text-white md:text-[48px] md:text-left text-center font-semibold text-[32px]">Welcome to <span class="text-[#CAFF33]">YourBank</span>  <br>Careers!</h2> 
+           <p class="text-[#B3B3B3] md:text-[16px] text-[14px] md:mt-6 mt-6 md:text-left text-center">Join our team and embark on a rewarding journey in the banking industry. At YourBank, we are committed to fostering a culture of excellence and providing opportunities for professional growth. With a focus on innovation, customer service, and integrity, we strive to make a positive impact in the lives of our customers and communities. Join us today and be a part of our mission to shape the future of banking.</p>
+           </div>
+        
+    </section>
+
+    <!-- Mission & Vision  -->
+
+       <section class="my-7">
+             <div class="text-white text-center md:text-left">
+                <h4 class="text-[38px] font-semibold py-3"> <span class="text-[#CAFF33]">Our </span> Values</h4>
+                <p class="md:text[16px] text-[14px] py-3 text-[#B3B3B3] ">Still you have any questions? Contact our Team via support@yourbank.com</p>
+            </div>
+                
+             <!-- card part  -->
+              <section class="grid grid-cols-12 mt-10 md:mt-14 gap-y-11 md:gap-y-28 md:gap-14 items-center mx-auto">
+             
+               <div class="md:col-span-6 col-span-12">
+               <img src="/assets/Image%20(3)-DtAfYVSn.png" alt="" class="w-fit ">
+               </div>
+
+                <div class="md:col-span-6 col-span-12">
+                <div class="border-l border-[#CAFF33] flex items-center">
+                <div class="  ml-4 ">
+                    <h3 class="md:text-[40px] text-[35px]  text-[#4C4C4D]">Mission</h3>
+                    <p class="text-[#B3B3B3] mt-2 md:text-[16px] text-[14px] ">At YourBank, our mission is to empower our customers to achieve financial success. We are dedicated to delivering innovative banking solutions that cater to their unique needs. Through personalized services, expert guidance, and cutting-edge technology, we aim to build strong, lasting relationships with our customers. Our mission is to be their trusted partner, helping them navigate their financial journey and realize their dreams.</p>
+                </div>
+               </div>
+               </div>
+
+                <div class="md:col-span-6 col-span-12 order-2 md:order-1">
+                <div class="border-r border-[#CAFF33] flex items-center">
+                <div class="  mr-4 ">
+                    <h3 class="md:text-[40px] text-[35px]  text-[#4C4C4D]">Vision</h3>
+                    <p class="text-[#B3B3B3] mt-2 md:text-[16px] text-[14px] ">Our vision at YourBank is to redefine banking by creating a seamless and personalized experience for our customers. We envision a future where banking is accessible, transparent, and tailored to individual preferences. Through continuous innovation and collaboration, we strive to be at the forefront of the industry, setting new standards for customer-centric banking. Our vision is to be the preferred financial institution, known for our unwavering commitment to excellence, trust, and customer satisfaction.</p>
+                </div>
+               </div>
+               </div>
+
+
+               <div class="md:col-span-6 col-span-12 order-1 md:order-2">
+              <div class="flex items-center justify-center md:justify-end">
+                 <img src="/assets/Image%20(2)-C9hoc5Nd.png" alt="" class="w-fit ">
+              </div>
+               </div>
+       
+        </section>
+        </section>
+
+
+        <!-- Press Releases -->
+
+        <section class="my-12 md:my-20">
+             <div class="text-white text-center md:text-left">
+                <h4 class="text-[38px] font-semibold py-3"> <span class="text-[#CAFF33]"></span> Press Releases</h4>
+                <p class="md:text[16px] text-[14px] py-3 text-[#B3B3B3] ">Stay updated with the latest happenings and exciting developments at YourBank through our press releases.</p>
+            </div>
+
+            <!-- card part  -->
+              <section class="grid grid-cols-12 mt-10 md:mt-14 gap-y-11 md:gap-y-28 md:gap-14 items-center mx-auto">
+             
+               <div class="md:col-span-6 col-span-12 my-2">
+                <div class="text-white md:p-6 p-2">
+                    <img src="/assets/Image%20(4)-yvLIVrEh.png" alt="" class="w-fit">
+                   <div class="md:p-4 p-2">
+                     <h4 class="text-[20px] font-semibold py-3 mt-5" >YourBank Launches New Rewards Program to Enhance Customer Loyalty and Satisfaction</h4>
+
+                    <div class="flex items-center gap-5 py-5">
+                        <p class="text-[#B3B3B3] text-[16px]">Location: India</p>
+                        <p class="text-[#B3B3B3] text-[16px]">Location: India</p>
+                      </div>
+
+                       <p class="text-[#B3B3B3] text-[16px] pt-2">YourBank is pleased to announce the introduction of our new Rewards Program, aimed at rewarding our loyal customers and enhancing their banking experience. The program offers exclusive benefits, discounts, and personalized offers tailored to individual customer preferences. With this initiative, YourBank reaffirms its commitment to delivering exceptional value and building lasting relationships with our valued customers.</p>
+                   </div>
+                </div>
+               </div>
+
+                <div class="md:col-span-6 col-span-12 my-2">
+                <div class="text-white md:p-6 p-2">
+                    <img src="/assets/Image%20(5)-VBQRfHX6.png" alt="" class="w-fit">
+                   <div class="md:p-4 p-2">
+                     <h4 class="text-[20px] font-semibold py-3 mt-5" >YourBank Launches New Rewards Program to Enhance Customer Loyalty and Satisfaction</h4>
+
+                    <div class="flex items-center gap-5 py-5">
+                        <p class="text-[#B3B3B3] text-[16px]">Location: India</p>
+                        <p class="text-[#B3B3B3] text-[16px]">Location: India</p>
+                      </div>
+
+                       <p class="text-[#B3B3B3] text-[16px] pt-2">YourBank is pleased to announce the introduction of our new Rewards Program, aimed at rewarding our loyal customers and enhancing their banking experience. The program offers exclusive benefits, discounts, and personalized offers tailored to individual customer preferences. With this initiative, YourBank reaffirms its commitment to delivering exceptional value and building lasting relationships with our valued customers.</p>
+                   </div>
+                </div>
+               </div>
+
+                <div class="md:col-span-6 col-span-12 my-2">
+                <div class="text-white md:p-6 p-2">
+                    <img src="/assets/Image%20(6)-B9IGwySw.png" alt="" class="w-fit">
+                   <div class="md:p-4 p-2">
+                     <h4 class="text-[20px] font-semibold py-3 mt-5" >YourBank Launches New Rewards Program to Enhance Customer Loyalty and Satisfaction</h4>
+
+                    <div class="flex items-center gap-5 py-5">
+                        <p class="text-[#B3B3B3] text-[16px]">Location: India</p>
+                        <p class="text-[#B3B3B3] text-[16px]">Location: India</p>
+                      </div>
+
+                       <p class="text-[#B3B3B3] text-[16px] pt-2">YourBank is pleased to announce the introduction of our new Rewards Program, aimed at rewarding our loyal customers and enhancing their banking experience. The program offers exclusive benefits, discounts, and personalized offers tailored to individual customer preferences. With this initiative, YourBank reaffirms its commitment to delivering exceptional value and building lasting relationships with our valued customers.</p>
+                   </div>
+                </div>
+               </div>
+
+                <div class="md:col-span-6 col-span-12 my-2">
+                <div class="text-white md:p-6 p-2">
+                    <img src="/assets/Image%20(7)-wz5mwzBy.png" alt="" class="w-fit">
+                   <div class="md:p-4 p-2">
+                     <h4 class="text-[20px] font-semibold py-3 mt-5" >YourBank Launches New Rewards Program to Enhance Customer Loyalty and Satisfaction</h4>
+
+                    <div class="flex items-center gap-5 py-5">
+                        <p class="text-[#B3B3B3] text-[16px]">Location: India</p>
+                        <p class="text-[#B3B3B3] text-[16px]">Location: India</p>
+                      </div>
+
+                       <p class="text-[#B3B3B3] text-[16px] pt-2">YourBank is pleased to announce the introduction of our new Rewards Program, aimed at rewarding our loyal customers and enhancing their banking experience. The program offers exclusive benefits, discounts, and personalized offers tailored to individual customer preferences. With this initiative, YourBank reaffirms its commitment to delivering exceptional value and building lasting relationships with our valued customers.</p>
+                   </div>
+                </div>
+               </div>
+        </section>
+           </section>
+
+             <!-- footer part star  -->
+
+          <footer class="mt-20">
+            <div>
+                <div >
+                    <img src="data:image/png;base64,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" alt="" class="flex flex-col mx-auto my-4">
+                    <div class="text-white text-center space-x-4 md:space-x-6 my-3">
+                        <a href="#" class="text-[18px] text-white hover:text-[#747070] transition  ">Home</a>
+                        <a href="#" class="text-[18px] text-white hover:text-[#747070] transition ">Home</a>
+                        <a href="#" class="text-[18px] text-white hover:text-[#747070] transition ">Home</a>
+                        <a href="#" class="text-[18px] text-white hover:text-[#747070] transition ">Home</a>
+                    </div>
+
+                   <div class="flex flex-wrap justify-center items-center gap-4 md:gap-7 my-11 bg-[#1C1C1C]  ring py-10">
+                     <div class="text-white text-center flex justify-center items-center gap-2">
+                       <i class="fa-solid fa-envelope text-[14px] md:text-lg "></i>
+                       <p class="md:text-[16px] text-[12px] text-[#E4E4E7]">hello@skillbirdge.com</p>
+                    </div>
+                    
+                     <div class="text-white text-center flex justify-center items-center gap-2">
+                       <i class="fa-solid fa-phone text-[14px] md:text-lg "></i>
+                       <p class="md:text-[16px] text-[12px] text-[#E4E4E7]">+91 91813 23 2309</p>
+                    </div>
+
+                     <div class="text-white text-center flex justify-center items-center gap-2">
+                        <i class="fa-solid fa-location-dot text-[14px] md:text-lg"></i>
+                       <p class="md:text-[16px] text-[12px] text-[#E4E4E7]">Somewhere in the World</p>
+                    </div>
+
+                   </div>
+                </div>
+            </div>
+          </footer>
+
+          <!-- copyright  -->
+
+          <div class="bg-[#1A1A1A] py-7 copright">
+            <div class="flex flex-wrap justify-between items-center  ">
+
+         <div class="flex items-center md:gap-4 gap-6 md:mx-0 mx-auto pb-6 md:pb-0">
+            <div class="h-[45px] w-[45px] leading-[45px] bg-[#CAFF33] flex items-center justify-center rounded-full hover:bg-amber-600 hover:text-white hover:scale-100 duration-300 hover:cursor-pointer">
+             <i class="fa-brands fa-facebook  "></i>
+             </div>
+
+              <div class="h-[45px] w-[45px] leading-[45px] bg-[#CAFF33] flex items-center justify-center rounded-full hover:bg-amber-600 hover:text-white hover:scale-100 duration-300 hover:cursor-pointer">
+            <i class="fa-brands fa-twitter"></i>
+             </div>
+
+              <div class="h-[45px] w-[45px] leading-[45px] bg-[#CAFF33] flex items-center justify-center rounded-full hover:bg-amber-600 hover:text-white hover:scale-100 duration-300 hover:cursor-pointer">
+            <i class="fa-brands fa-linkedin"></i>
+             </div>
+
+             </div>
+
+               <div class="flex md:mx-0 mx-auto md:py-0 py-3"> 
+                 <p class="text-[#B3B3B3]">YourBank All Rights Reserved</p>
+               </div>
+
+               <div class="flex md:mx-0 mx-auto md:py-0 py-3 ">
+                 <p class="text-[#B3B3B3]">Privacy Policy | Terms of Service</p>
+               </div>
+
+
+            </div>
+          </div>
+
+
+
+    
+     <!-- js part  -->
+
+    <script src="src/main.js"></script>
+    
+</body>
+
+</html>
